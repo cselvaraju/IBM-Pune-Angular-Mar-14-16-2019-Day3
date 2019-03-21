@@ -1,0 +1,25 @@
+<div>
+  <h3>Post Demo</h3>
+  <button (click)="getPosts()">Get Posts</button>
+  &nbsp;
+  <button (click)="createPost()">Create Post</button>
+  <p></p>
+  <div *ngIf="posts">
+    <div *ngFor="let post of posts">
+      <div class="card">
+        <div class="card-header">
+          ID: {{post.id}}
+        </div>
+        <div class="card-title">
+          Title: {{post.title}}
+        </div>
+        <div class="card-body">
+          Body: {{post.body}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!posts">
+    <img src="assets/loading.gif" alt="Loading...">
+  </div>
+</div>

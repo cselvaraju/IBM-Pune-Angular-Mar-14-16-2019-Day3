@@ -1,0 +1,11 @@
+<div id="cdiv">
+  <h3>Child Component</h3>
+  Parent favourite movie: {{parentFavMovie}}
+  <p></p>
+  <label>
+    Favourite Country:
+    <input type="text" [(ngModel)]="favCountry">
+  </label>
+  &nbsp;
+  <button (click)="sendData2Parent()">Send to Parent</button>
+</div>

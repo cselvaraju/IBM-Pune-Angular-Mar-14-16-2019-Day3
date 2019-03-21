@@ -1,0 +1,20 @@
+<div>
+  <h4>Pipe Demo</h4>
+  Message: {{message | titlecase}}
+  <p></p>
+  Today is: {{today | date:'dd-MM-yyyy'}}
+  <p></p>
+  The cost is: {{cost | currency:'\u20b9'}}
+  <p></p>
+  Favourite actor: {{actor | json}}
+  <p></p>
+  <label>
+    Some text: <input type="text" [(ngModel)]="text">
+  </label>
+  <p></p>
+  Original Text: {{text}}
+  <p></p>
+  Reversed Text: {{text | reversetext}}
+  <p></p>
+  Piglatin Text: {{text | piglatin}}
+</div>
